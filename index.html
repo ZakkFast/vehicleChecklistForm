@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 25px;">
+    <header style="margin: 25px 0px 25px 0px">
+        <div id="header" style="text-align: center; text-decoration: underline;">
+            <img src="https://d1miv8abus7gau.cloudfront.net/logos/interstatepest20210209091331.png" style="height: 75px; width: 75px;">
+            <h2>IPM MONTHLY VEHICLE MAINTENANCE CHECKLIST</h2>
+        </div>
+        <div id="userLog">
+
+        </div>
+    </header>
+    <article>
+        <!-- Inspection Info -->
+        <div id="info">
+            <form style="display:flex; flex-wrap: wrap; justify-content: center; margin-bottom: 10px">
+                <div>
+                    <label for="date" style="margin: 0px 10px 0px 10px;">Inspection Date</label>
+                    <input style="border:none; border-bottom: 1px solid black;" type="text" name="date">
+                </div>
+                <div>
+                    <label for="vehicle" style="margin: 0px 10px 0px 10px">Vehicle</label>
+                    <input style="border:none; border-bottom: 1px solid black;" type="text" name="vehicle">
+                </div>
+                <div>
+                    <label for="tech" style="margin: 0px 10px 0px 10px">Checked By:</label>
+                    <input style="border:none; border-bottom: 1px solid black;" type="text" name="tech">
+                </div>
+            </form>
+            <form style="display:flex; flex-wrap: wrap; justify-content: center;">
+                <div>
+                    <label for="currentMileage" style="margin: 0px 10px 0px 10px;">Current Mileage</label>
+                    <input style="border:none; border-bottom: 1px solid black;" type="text" name="currentMileage">
+                    <label for="vehicleLicenseNum" style="margin: 0px 10px 0px 10px;">Vehicle License #</label>
+                    <input style="border:none; border-bottom: 1px solid black;" type="text" name="vehicleLicenseNum">
+                    <label for="oilChangeDate" style="margin: 0px 10px 0px 10px;">Last Oil Change</label>
+                    <input style="border:none; border-bottom: 1px solid black;" type="text" name="oilChangeDate">
+                </div>
+            </form>
+        </div>
+        <!-- Checklist -->
+        <table style="width:100%; margin-top: 15px; border: 1px solid black;">
+            <tr style="border: 1px solid black;">
+                <th style="border: 1px solid black;">
+                    Item
+                </th>
+                <th style="border: 1px solid black;">
+                    Okay
+                </th>
+                <th style="border: 1px solid black;">
+                    Issue
+                </th>
+                <th style="border: 1px solid black;">
+                    Remarks
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Saftey Belts
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Brakes
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Steering
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Engine
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Transmission
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Heater/AC
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Wipers
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Headlights
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Brake/Tail Lights
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Turn Signals
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Doors
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Windows / Windshield
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Radio
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Horn
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Tire Tread
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Tire Air Pressure
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Lug Wrench / Jack
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Fire Extinguisher
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    First Aid / Spill Kit
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Accident Packet In Glovebox
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Anit-Freeze
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Oil
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Transmission Fluid
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Power Steering
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Brake Fluid
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black;">
+                    Window Washer Fluid
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <input type="checkbox">
+                </th>
+                <th style="border: 1px solid black;">
+                    <textarea placeholder="Description" maxlength="40" cols="25" style="resize: none; width: 95%; border: none; margin: 1px;"></textarea>
+                </th>
+            </tr>
+        
+        </table>
+    </article>
+</body>
+</html>
